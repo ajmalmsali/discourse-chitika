@@ -3,4 +3,4 @@ en:
     admin:
       site_settings:
         categories:
-          adsense_plugin: 'AdSense'
+          chitika_plugin: 'Chitika'

@@ -5,9 +5,9 @@
 </div>
 
 {{#if Discourse.Mobile.mobileView}}
-  {{adsenseBlock "320" "50" "topic_top_mobile"}}
+  {{chitikaBlock "320" "50" "topic_top_mobile"}}
 {{else}}
-  {{adsenseBlock "728" "90" "topic_top"}}
+  {{chitikaBlock "728" "90" "topic_top"}}
 {{/if}}
 
 {{#if postStream.loaded}}
@@ -102,9 +102,9 @@
           {{#if postStream.loadedAllPosts}}
 
             {{#if Discourse.Mobile.mobileView}}
-              {{adsenseBlock "320" "50" "topic_bottom_mobile"}}
+              {{chitikaBlock "320" "50" "topic_bottom_mobile"}}
             {{else}}
-              {{adsenseBlock "728" "90" "topic_bottom"}}
+              {{chitikaBlock "728" "90" "topic_bottom"}}
             {{/if}}
 
             {{view 'topic-closing' topic=model}}

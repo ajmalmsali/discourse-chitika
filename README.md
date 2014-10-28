@@ -1,12 +1,14 @@
-discourse-adsense
+discourse-chitika
 =================
 
-Google AdSense plugin for Discourse forum
+Chitika plugin for Discourse forum
+
+Patched from Discourse Adsense
 
 Installation
 ============
 
-* Run `bundle exec rake plugin:install repo=http://github.com/discoursehosting/discourse-adsense` in your discourse directory
+* Run `bundle exec rake plugin:install repo=http://github.com/ajmalmsali/discourse-chitika` in your discourse directory
 * In development mode, run `bundle exec rake assets:clean`
 * In production, recompile your assets: `bundle exec rake assets:precompile`
 * Restart Discourse
@@ -16,14 +18,12 @@ Installation
 Usage
 =====
 
-* Go to Admin -> Settings -> AdSense
-* Enter your AdSense publisher ID (ca-pub-xxxxxxxxxxxxxxxx)
-* Create new ad slots within your AdSense account (728x90 for desktop, 320x50 for mobile)
-* Copy the slot id # numbers (ten digits shown in the ID column) in the Discourse settings
+* Go to Admin -> Settings -> chitika
+* Create new ad slots within your chitika account (728x90 for desktop)
 * Enable the slots you want to use
 * Remember to watch extra whitespace at the beginning and end of each field.
 
-* You can use the 'adsense_through_trust_level' to disable ads for users above a certain trust level. 
+* You can use the 'chitika_through_trust_level' to disable ads for users above a certain trust level. 
  - 0 only shows to users that are not logged in
  - 1 shows ads to users that are not logged in, and to new and basic users
  - 2 shows ads to regular users as well, but not to leaders and elders
