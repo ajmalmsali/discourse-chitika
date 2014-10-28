@@ -12,7 +12,7 @@
         return new Handlebars.SafeString('<script type="text/javascript">'+
           '(function() {'+
           'if (window.CHITIKA === undefined) { window.CHITIKA = { \'units\' : [] }; };'+
-          'var unit = {"calltype":"async[2]","publisher":"'+Discourse.SiteSettings.chitika_publisher_code.trim()+'","width":'+width+',"height":'+height',"sid":"Chitika Default"};'+
+          'var unit = {"calltype":"async[2]","publisher":"'+Discourse.SiteSettings.chitika_publisher_code.trim()+'","width":'+width+',"height":'+height+',"sid":"Chitika Default"};'+
           'var placement_id = window.CHITIKA.units.length;'+
           'window.CHITIKA.units.push(unit);'+
           'document.write(\'<div id="chitikaAdBlock-"\' + placement_id + \'"></div>\');'+
