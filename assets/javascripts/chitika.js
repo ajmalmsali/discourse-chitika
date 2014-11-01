@@ -17,7 +17,7 @@
           'window.CHITIKA.units.push(unit);'+
         '}());'+
         '</script>'+
-        '<div id="chitikaAdBlock-0"></div>'+
+        '<center><div id="chitikaAdBlock-0"></div></center>'+
         '<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>');
       }
     } 
