@@ -8,7 +8,7 @@
 
     var mobile = ( slotid.search('_mobile') !== -1 ) ? true : false;
     if(!mobile){
-      if (eval('Discourse.SiteSettings.chitika_show_' + position)) {
+      if (eval('Discourse.SiteSettings.chitika_show_' + slotid)) {
         return new Handlebars.SafeString('<script type="text/javascript">'+
           '(function() {'+
           'if (window.CHITIKA === undefined) { window.CHITIKA = { \'units\' : [] }; };'+
