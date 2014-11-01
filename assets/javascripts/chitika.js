@@ -15,9 +15,9 @@
           'var unit = {"calltype":"async[2]","publisher":"'+Discourse.SiteSettings.chitika_publisher_code.trim()+'","width":'+width+',"height":'+height+',"sid":"Chitika Default"};'+
           'var placement_id = window.CHITIKA.units.length;'+
           'window.CHITIKA.units.push(unit);'+
-          'document.write(\'<div id="chitikaAdBlock-0"></div>\');'+
         '}());'+
         '</script>'+
+        '<div id="chitikaAdBlock-0"></div>'+
         '<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>');
       }
     } 
