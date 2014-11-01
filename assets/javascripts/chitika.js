@@ -16,8 +16,8 @@
           'var placement_id = window.CHITIKA.units.length;'+
           'window.CHITIKA.units.push(unit);'+
         '}());'+
+        'document.write(\'<center><div id="chitikaAdBlock-\'+placement_id+\'"></div></center>\');'+
         '</script>'+
-        '<center><div id="chitikaAdBlock-0"></div></center>'+
         '<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>');
       }
     } 
