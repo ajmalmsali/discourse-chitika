@@ -15,8 +15,8 @@
           'var unit = {"calltype":"async[2]","publisher":"'+Discourse.SiteSettings.chitika_publisher_code.trim()+'","width":'+width+',"height":'+height+',"sid":"Chitika Default"};'+
           'var placement_id = window.CHITIKA.units.length;'+
           'window.CHITIKA.units.push(unit);'+
+          'document.write(\'<center><div id="chitikaAdBlock-\'+placement_id+\'"></div></center>\');'+
         '}());'+
-        'document.write(\'<center><div id="chitikaAdBlock-\'+placement_id+\'"></div></center>\');'+
         '</script>'+
         '<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>');
       }
