@@ -16,7 +16,7 @@
           'var unit = {"calltype":"async[2]","publisher":"'+Discourse.SiteSettings.chitika_publisher_code.trim()+'","width":'+width+',"height":'+height+',"sid":"Chitika Default"};'+
           'placement_id = window.CHITIKA.units.length;'+
           'window.CHITIKA.units.push(unit);'+
-          'var Pallet = document.getElementById('+slotid+');'+
+          'var Pallet = document.getElementById("'+slotid+'");'+
           'var divBox = document.createElement("div");'+
           'divBox.setAttribute("id", placement_id);'+
           'Pallet.appendChild(divBox);'+
