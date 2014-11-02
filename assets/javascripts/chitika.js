@@ -16,7 +16,10 @@
           'var unit = {"calltype":"async[2]","publisher":"'+Discourse.SiteSettings.chitika_publisher_code.trim()+'","width":'+width+',"height":'+height+',"sid":"Chitika Default"};'+
           'placement_id = window.CHITIKA.units.length;'+
           'window.CHITIKA.units.push(unit);'+
-          'document.getElementById('+slotid+').innerHTML = '+'<div id="chitikaAdBlock-'+placement_id+'"></div>;'+
+          'var Pallet = document.getElementById('+slotid+');'+
+          'var divBox = document.createElement("div");'+
+          'divBox.setAttribute("id", placement_id);'+
+          'Pallet.appendChild(divBox);'+
         '}'+
         '</script>'+
         '<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>');
